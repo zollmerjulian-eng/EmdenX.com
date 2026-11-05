@@ -1,1 +1,114 @@
 
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meine Website</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #10131b;
+      color: white;
+    }
+
+    header {
+      padding: 25px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #252b38;
+    }
+
+    header h2 {
+      color: #429cff;
+    }
+
+    nav a {
+      color: #bbb;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+
+    .hero {
+      min-height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 30px;
+    }
+
+    .hero h1 {
+      font-size: clamp(38px, 7vw, 70px);
+      margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+      color: #429cff;
+    }
+
+    .hero p {
+      color: #aab1c0;
+      font-size: 18px;
+      max-width: 550px;
+      line-height: 1.6;
+    }
+
+    .button {
+      margin-top: 30px;
+      padding: 14px 28px;
+      background: #287fe0;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      padding: 25px;
+      text-align: center;
+      color: #747d8d;
+      border-top: 1px solid #252b38;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h2>MEINE WEBSITE</h2>
+    <nav>
+      <a href="#">Startseite</a>
+      <a href="#info">Über uns</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Willkommen auf <span>meiner Seite.</span></h1>
+    <p>
+      Schön, dass du hier bist.
+      Entdecke meine Website und erfahre mehr
+      über meine Projekte.
+    </p>
+    <a href="#info" class="button">Mehr erfahren</a>
+  </section>
+
+  <section id="info" class="hero">
+    <h1>Über mich</h1>
+    <p>Hier kannst du dich und deine Projekte vorstellen.</p>
+  </section>
+
+  <footer>
+    © 2026 Meine Website
+  </footer>
+
+</body>
+</html>
+
